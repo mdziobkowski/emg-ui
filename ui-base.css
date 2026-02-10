@@ -242,6 +242,10 @@
   .msg.warn { border-color: rgba(245,158,11,.35); color: rgba(245,158,11,.95); }
   .msg.bad  { border-color: rgba(248,113,113,.35); color: rgba(248,113,113,.95); }
 
+  .warn {
+  color: var(--warn);
+  }
+
   /* EMPTY STATE */
 
   .emptyState {
