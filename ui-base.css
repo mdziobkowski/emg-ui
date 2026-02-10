@@ -249,3 +249,176 @@
     color: rgba(255,255,255,.80);
     margin-top: 12px;
   }
+
+/* === Forms / Sections (from Form 1) === */
+
+form {
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 860px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .span-2 { grid-column: 1 / -1; }
+}
+
+.section {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  background: rgba(255,255,255,.04);
+  display: grid;
+  gap: 10px;
+}
+
+.section h3 {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255,255,255,.78);
+  letter-spacing: .3px;
+  text-transform: uppercase;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,.82);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+
+.secondary {
+  background: rgba(255,255,255,.06);
+}
+
+.req { color: rgba(255,255,255,.85); }
+.req:after {
+  content: " *";
+  color: rgba(248,113,113,.95);
+  font-weight: 700;
+}
+
+.footerNote {
+  padding: 0 18px 18px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.inlineActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.linkBtn {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: rgba(125,211,252,.95);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.contactCard {
+  border: 1px dashed rgba(255,255,255,.18);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(0,0,0,.14);
+  display: grid;
+  gap: 10px;
+}
+
+.contactHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.smallBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 650;
+  background: rgba(255,255,255,.06);
+}
+
+.hidden { display: none !important; }
+
+/* === Success/OK screens (from Form 2/3) === */
+
+.ok {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ok);
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tokenBox {
+  margin-top: 6px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,.25);
+  border: 1px dashed rgba(255,255,255,.18);
+  display: grid;
+  gap: 8px;
+}
+
+.tokenLabel {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.token {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 16px;
+  background: rgba(255,255,255,.06);
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  word-break: break-all;
+}
