@@ -45,6 +45,9 @@
     overflow: hidden;
   }
 
+  .cardSuccess { max-width: 640px; padding: 26px 28px; }
+  .cardSuccess .actions { margin-top: 18px; justify-content: center; }
+
   .header {
     padding: 18px 18px 8px;
   }
